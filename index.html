@@ -2,14 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/universalviewer@latest/dist/uv.css" />
+    <script  src="https://cdn.jsdelivr.net/npm/universalviewer@latest/dist/umd/UV.js"></script>
     <title>Universal Viewer</title>
   </head>
   <body>
-    <!-- A Simple loader for the <a href="http://universalviewer.io/">Universal Viewer</a>, accepts query parameters <code>manifest</code> and <code>canvas</code>. -->
+    <!-- A Simple loader for the <a href="http://universalviewer.io/">Universal Viewer</a> that accepts query parameters <code>manifest</code> and <code>canvas</code>. -->
     <!-- Usage: https://2sc1815j.github.io/open-in-iiif-viewer/ -->
-    <div class="uv" data-fullscreen="true" data-config="https://gist.githubusercontent.com/2SC1815J/28e791273aa69f826613cbddab4e3ef6/raw/uv-config.json"></div>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="http://universalviewer.io/uv/lib/embed.js" id="embedUV"></script>
+    <div class="uv" id="uv" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></div>
     <script src="index.js"></script>
   </body>
 </html>
